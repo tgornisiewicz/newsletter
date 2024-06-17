@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  justify-content: center;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.content {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.content__image {
+  background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+  height: 33.3333333333%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 15px 15px;
+}
+.content__text-area {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content__header {
+  font-size: 38px;
+  margin-top: 10px;
+}
+.content__add {
+  margin-top: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.content__advantages {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content__advantages-image {
+  background-image: url("../assets/images/icon-list.svg");
+  width: 22px;
+  margin-right: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content__advantages-description {
+  font-size: 15px;
+}
+.content__labels {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.content__error {
+  font-size: 12px;
+  color: red;
+}
+.content__input-label {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__input {
+  margin-top: 5px;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #edd8d8;
+  width: 100%;
+}
+.content__input::-moz-placeholder {
+  color: hsl(231, 7%, 60%);
+  font-weight: 400;
+  font-size: 16px;
+}
+.content__input::placeholder {
+  color: hsl(231, 7%, 60%);
+  font-weight: 400;
+  font-size: 16px;
+}
+.content__input.invalid {
+  background-color: rgb(236, 150, 150);
+  color: hsl(4, 100%, 67%);
+  border: 1px solid red;
+}
+.content__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 18px;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+.content__button:hover {
+  background: linear-gradient(to right, rgb(255, 88, 106), rgb(255, 99, 74));
+}
+
+.success {
+  width: 350px;
+  height: 750px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.success__image {
+  margin-top: 120px;
+  height: 65px;
+}
+.success__header {
+  margin-top: 35px;
+  font-size: 38px;
+  line-height: 40px;
+}
+.success__paragraph {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 25px;
+}
+.success__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 210px;
+  text-decoration: none;
+  padding: 18px;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+.success__button:hover {
+  background: linear-gradient(to right, rgb(255, 88, 106), rgb(255, 99, 74));
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    flex-direction: row-reverse;
+    margin-top: 200px;
+    width: 1100px;
+    padding: 30px;
+    border-radius: 40px;
+  }
+  .content__image {
+    width: 45%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+  }
+  .content__text-area {
+    width: 55%;
+    height: 100%;
+    padding: 40px;
+  }
+  .content__header {
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  .content__add {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .content__advantages {
+    margin-top: 25px;
+  }
+  .content__advantages-image {
+    width: 30px;
+  }
+  .content__advantages-description {
+    font-size: 18px;
+  }
+  .content__error {
+    font-size: 14px;
+  }
+  .content__input-label {
+    font-size: 14px;
+  }
+  .content__input {
+    margin-top: 5px;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #edd8d8;
+    width: 100%;
+  }
+  .content__input::-moz-placeholder {
+    color: hsl(231, 7%, 60%);
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .content__input::placeholder {
+    color: hsl(231, 7%, 60%);
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .success {
+    margin-top: 200px;
+    width: 500px;
+    height: 550px;
+    padding: 50px;
+    border-radius: 25px;
+  }
+  .success__image {
+    margin-top: 15px;
+    height: 65px;
+  }
+  .success__header {
+    margin-top: 35px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .success__paragraph {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  .success__button {
+    margin-top: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
