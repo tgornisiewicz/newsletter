@@ -4,6 +4,7 @@ const input = document.querySelector('.content__input')
 const success = document.querySelector('.success')
 const content = document.querySelector('.content')
 const reloadbutton = document.querySelector('.success__button')
+const successEmail = document.querySelector('.success__paragraph-mark')
 
 const validation = () => {
 	const email = document.querySelector('.content__input').value
@@ -12,8 +13,6 @@ const validation = () => {
 		const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 		return pattern.test(email)
 	}
-
-	// Example usage
 
 	if (email == '') {
 		error.innerHTML = "Can't be blank"
@@ -25,7 +24,8 @@ const validation = () => {
 		error.innerHTML = ''
 		input.classList.remove('invalid')
 		success.style = 'display: flex;'
-		content.style = 'display: none'
+		content.style = 'display: none;'
+		successEmail.innerHTML = email
 	}
 }
 
